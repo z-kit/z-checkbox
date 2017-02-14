@@ -72,6 +72,14 @@ storiesOf('CSS component', module)
         <label htmlFor="test4" className="z-checkbox__label z-checkbox__label--bottom">Label</label>
       </div>
     </div>
+  ))
+  .add('disabled input', () => (
+    <div className="z-checkbox">
+      <div className="z-checkbox__box">
+        <input className="z-checkbox__input" type="checkbox" disabled />
+        <div className="z-checkbox__container" />
+      </div>
+    </div>
   ));
 
 storiesOf('Stateless functional component', module)
@@ -91,4 +99,5 @@ storiesOf('Stateless functional component', module)
       <ZCheckbox label="Label" labelPosition="top" />
       <ZCheckbox label="Label" labelPosition="bottom" />
     </div>
-  ));
+  ))
+  .add('disabled input', () => <ZCheckbox disabled />);

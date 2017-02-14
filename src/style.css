@@ -88,7 +88,9 @@
   background-color: var(--error-color);
 }
 
+.z-checkbox__input:disabled { cursor: not-allowed; }
 .z-checkbox__input:focus + .z-checkbox__container { border-color: var(--focused-border-color); }
+.z-checkbox__input:disabled + .z-checkbox__container { opacity: 0.5; }
 
 /* The optional checkbox label */
 .z-checkbox__label {

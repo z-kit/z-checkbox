@@ -17,25 +17,25 @@ storiesOf('CSS component', module)
     <div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" />
+          <input id="test" className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--success" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" />
+          <input id="test" className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--warning" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" />
+          <input id="test" className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--danger" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" />
+          <input id="test" className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--error" />
         </div>
       </div>
@@ -86,10 +86,10 @@ storiesOf('Stateless functional component', module)
   .add('default', () => <ZCheckbox />)
   .add('colors', () => (
     <div>
-      <ZCheckbox success />
-      <ZCheckbox warning />
-      <ZCheckbox danger />
-      <ZCheckbox error />
+      <ZCheckbox success checked />
+      <ZCheckbox warning checked />
+      <ZCheckbox danger checked />
+      <ZCheckbox error checked />
     </div>
   ))
   .add('label', () => (

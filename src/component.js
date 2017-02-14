@@ -23,8 +23,7 @@ const classnames = {
 };
 
 export function ZCheckbox(e) {
-  return (props) => {
-    const { label, labelPosition, success, warning, danger, error } = props;
+  return ({ label, labelPosition, success, warning, danger, error, ...props }) => {
     const labelClasses = [classnames.label];
     if (labelPosition === 'top') labelClasses.push(classnames.labelTop);
     if (labelPosition === 'bottom') labelClasses.push(classnames.labelBottom);
@@ -32,7 +31,7 @@ export function ZCheckbox(e) {
     const labelProps = { className: labelClasses.join(' ') };
     if (props.id) labelProps.for = props.id;
     const eLabel = label ? e('label', labelProps, label) : null;
-    const eInput = e('input', { className: classnames.input, type: 'checkbox', props });
+    const eInput = e('input', { className: classnames.input, type: 'checkbox', ...props });
     const containerClasses = [classnames.container];
     if (success) containerClasses.push(classnames.isSuccess);
     if (warning) containerClasses.push(classnames.isWarning);

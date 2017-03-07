@@ -100,13 +100,16 @@ npm run unit-test
 
 Test the component from the browser perspective, to see if they render correctly and comply with the [guide](https://github.com/z-kit/guide).
 
-We use [selenium](https://github.com/SeleniumHQ/selenium) here, so you may need Java installed on your computer to run the regression tests.
-Selenium dependencies are downloaded automatically by the package scripts.
-
 Run the regression tests with:
 
 ```bash
 npm run regression-test
+```
+
+or run and kill the server afterwards:
+
+```bash
+npm run regression-test-kill
 ```
 
 ### <a name="ci"></a> CI

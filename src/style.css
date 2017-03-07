@@ -6,10 +6,11 @@
 
 /* Variables */
 :root {
-  --primary-color: #3c91e6;
-  --warning-color: #fed766;
+  --primary-color: #2386ab;
+  --secondary-color: #26547c;
+  --warning-color: #e0b938;
   --success-color: #76b245;
-  --danger-color: #f03a47;
+  --danger-color: #d8343f;
   --error-color: #f00;
   --neutral-border-color: #aaa;
   --focused-border-color: #555;
@@ -70,6 +71,10 @@
   background-color: var(--primary-color);
   border-color: transparent;
   transition: background-color 0.1s ease;
+}
+
+.z-checkbox__input:checked + .z-checkbox__container--secondary {
+  background-color: var(--secondary-color);
 }
 
 .z-checkbox__input:checked + .z-checkbox__container--warning {

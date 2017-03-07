@@ -15,6 +15,21 @@ test('SFC component - default', (t) => {
 
 test('SFC component - colors', (t) => {
   t.plan(1);
+  const msg = 'should render color for secondary modifier';
+  const expected = 'rgb(38, 84, 124)';
+  return Nightmare()
+    .goto('http://localhost:6006/iframe.html?selectedKind=Stateless%20functional%20component&selectedStory=colors')
+    .wait('.z-checkbox')
+    .evaluate(() => {
+      const checkboxStyle = getComputedStyle(document.querySelector('.z-checkbox__container--secondary'));
+      return checkboxStyle.backgroundColor;
+    })
+    .end()
+    .then(actual => t.deepEqual(expected, actual, msg));
+});
+
+test('SFC component - colors', (t) => {
+  t.plan(1);
   const msg = 'should render color for success modifier';
   const expected = 'rgb(118, 178, 69)';
   return Nightmare()
@@ -31,7 +46,7 @@ test('SFC component - colors', (t) => {
 test('SFC component - colors', (t) => {
   t.plan(1);
   const msg = 'should render color for warning modifier';
-  const expected = 'rgb(254, 215, 102)';
+  const expected = 'rgb(224, 185, 56)';
   return Nightmare()
     .goto('http://localhost:6006/iframe.html?selectedKind=Stateless%20functional%20component&selectedStory=colors')
     .wait('.z-checkbox')
@@ -46,7 +61,7 @@ test('SFC component - colors', (t) => {
 test('SFC component - colors', (t) => {
   t.plan(1);
   const msg = 'should render color for danger modifier';
-  const expected = 'rgb(240, 58, 71)';
+  const expected = 'rgb(216, 52, 63)';
   return Nightmare()
     .goto('http://localhost:6006/iframe.html?selectedKind=Stateless%20functional%20component&selectedStory=colors')
     .wait('.z-checkbox')

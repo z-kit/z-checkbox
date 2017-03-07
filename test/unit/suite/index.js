@@ -63,6 +63,20 @@ test('Checkbox label position', (t) => {
   return t.deepEqual(actual, expected, msg);
 });
 
+test('Checkbox secondary color', (t) => {
+  const msg = 'should be available';
+  const actual = renderJSX(<ZCheckbox secondary />);
+  const expected = JSX(
+    <div className="z-checkbox">
+      <div className="z-checkbox__box">
+        <input className="z-checkbox__input" type="checkbox" />
+        <div className="z-checkbox__container z-checkbox__container--secondary" />
+      </div>
+    </div>
+  );
+  return t.deepEqual(actual, expected, msg);
+});
+
 test('Checkbox success color', (t) => {
   const msg = 'should be available';
   const actual = renderJSX(<ZCheckbox success />);

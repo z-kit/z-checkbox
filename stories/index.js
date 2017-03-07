@@ -18,6 +18,12 @@ storiesOf('CSS component', module)
       <div className="z-checkbox">
         <div className="z-checkbox__box">
           <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <div className="z-checkbox__container z-checkbox__container--secondary" />
+        </div>
+      </div>
+      <div className="z-checkbox">
+        <div className="z-checkbox__box">
+          <input id="test" className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--success" />
         </div>
       </div>
@@ -86,6 +92,7 @@ storiesOf('Stateless functional component', module)
   .add('default', () => <ZCheckbox />)
   .add('colors', () => (
     <div>
+      <ZCheckbox secondary checked />
       <ZCheckbox success checked />
       <ZCheckbox warning checked />
       <ZCheckbox danger checked />

@@ -1,6 +1,6 @@
 # <a name="z-checkbox"></a> z-checkbox
 
-[![Build]](https://travis-ci.org/z-kit/z-checkbox) [![SemVer]](http://semver.org/) [![License]](LICENSE)
+[![Build]](https://travis-ci.org/z-kit/z-checkbox) [![SemVer]](http://semver.org/) [![Greenkeeper badge](https://badges.greenkeeper.io/z-kit/z-checkbox.svg)](https://greenkeeper.io/) [![License]](LICENSE)
 
 A styled checkbox component for your web application.
 

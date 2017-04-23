@@ -14,8 +14,8 @@
   --error-color: #f00;
   --neutral-border-color: #aaa;
   --focused-border-color: #555;
-  --label-color: #555;
-  --box-size: 1.25rem;
+  --checkbox-label-color: #555;
+  --checkbox-size: 1.25rem;
 }
 
 /* Wrapper */
@@ -30,8 +30,8 @@
   display: inline-block;
   box-sizing: border-box;
   position: relative;
-  width: var(--box-size);
-  height: var(--box-size);
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
 }
 
 /* Input element type checkbox */
@@ -107,7 +107,7 @@
   margin: 0;
   margin-left: 0.5rem;
   font-size: 1rem;
-  color: var(--label-color);
+  color: var(--checkbox-label-color);
   cursor: pointer;
 }
 

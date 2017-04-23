@@ -14,6 +14,7 @@ A styled checkbox component for your web application.
 - [How to use](#howto)
   - [CSS component](#css)
   - [Stateless Functional Component](#sfc)
+- [Theming](#theming)
 - [License](#license)
 
 ## <a name="install"></a> Install
@@ -121,6 +122,25 @@ Render the HTML by using the SFC and passing props.
 ```jsx
 <ZCheckbox id="example" label="Label" labelPosition="top" />
 ```
+
+## <a name="theming"></a> Theming
+
+`1.2.0` version of z-checkbox brings theming support via CSS Variables.
+
+Below is the list of variables available to use:
+
+| Variable               | Expected type       | Description                                           |
+| ---------------------- | ------------------- | ----------------------------------------------------- |
+| --primary-color        | `color`             | The primary background-color of the checkbox          |
+| --secondary-color      | `color`             | The secondary background-color of the checkbox        |
+| --success-color        | `color`             | A success indicating background-color of the checkbox |
+| --warning-color        | `color`             | A warning indicating background-color of the checkbox |
+| --danger-color         | `color`             | A danger indicating background-color of the checkbox  |
+| --error-color          | `color`             | An error indicating background-color of the checkbox  |
+| --neutral-border-color | `color`             | The default border-color of the checkbox              |
+| --focused-border-color | `color`             | The border-color of the focused checkbox              |
+| --checkbox-label-color | `color`             | The color of the checkbox label text                  |
+| --checkbox-size        | `px`, `em` or `rem` | The size of the ticker box, always squared            |
 
 ## <a name="license"></a> LICENSE
 

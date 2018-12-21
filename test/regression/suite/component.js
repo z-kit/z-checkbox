@@ -1,4 +1,4 @@
-import { test } from 'ava';
+import test from 'ava';
 import Nightmare from 'nightmare';
 
 test('SFC component - default', (t) => {
@@ -13,7 +13,7 @@ test('SFC component - default', (t) => {
     .then(actual => t.deepEqual(expected, actual, msg));
 });
 
-test('SFC component - colors', (t) => {
+test('SFC component - secondary', (t) => {
   t.plan(1);
   const msg = 'should render color for secondary modifier';
   const expected = 'rgb(38, 84, 124)';
@@ -28,7 +28,7 @@ test('SFC component - colors', (t) => {
     .then(actual => t.deepEqual(expected, actual, msg));
 });
 
-test('SFC component - colors', (t) => {
+test('SFC component - success', (t) => {
   t.plan(1);
   const msg = 'should render color for success modifier';
   const expected = 'rgb(118, 178, 69)';
@@ -43,7 +43,7 @@ test('SFC component - colors', (t) => {
     .then(actual => t.deepEqual(expected, actual, msg));
 });
 
-test('SFC component - colors', (t) => {
+test('SFC component - warning', (t) => {
   t.plan(1);
   const msg = 'should render color for warning modifier';
   const expected = 'rgb(224, 185, 56)';
@@ -58,7 +58,7 @@ test('SFC component - colors', (t) => {
     .then(actual => t.deepEqual(expected, actual, msg));
 });
 
-test('SFC component - colors', (t) => {
+test('SFC component - danger', (t) => {
   t.plan(1);
   const msg = 'should render color for danger modifier';
   const expected = 'rgb(216, 52, 63)';
@@ -73,7 +73,7 @@ test('SFC component - colors', (t) => {
     .then(actual => t.deepEqual(expected, actual, msg));
 });
 
-test('SFC component - colors', (t) => {
+test('SFC component - error', (t) => {
   t.plan(1);
   const msg = 'should render color for error modifier';
   const expected = 'rgb(255, 0, 0)';

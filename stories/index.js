@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import checkbox from '../src/component';
 
 const ZCheckbox = checkbox(React.createElement);
@@ -17,31 +17,31 @@ storiesOf('CSS component', module)
     <div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <input className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--secondary" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <input className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--success" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <input className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--warning" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <input className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--danger" />
         </div>
       </div>
       <div className="z-checkbox">
         <div className="z-checkbox__box">
-          <input id="test" className="z-checkbox__input" type="checkbox" checked />
+          <input className="z-checkbox__input" type="checkbox" checked />
           <div className="z-checkbox__container z-checkbox__container--error" />
         </div>
       </div>
@@ -101,10 +101,10 @@ storiesOf('Stateless functional component', module)
   ))
   .add('label', () => (
     <div>
-      <ZCheckbox label="Label" />
-      <ZCheckbox label="Label" labelPosition="left" />
-      <ZCheckbox label="Label" labelPosition="top" />
-      <ZCheckbox label="Label" labelPosition="bottom" />
+      <ZCheckbox id="test" label="Label" />
+      <ZCheckbox id="test2" label="Label" labelPosition="left" />
+      <ZCheckbox id="test3" label="Label" labelPosition="top" />
+      <ZCheckbox id="test4" label="Label" labelPosition="bottom" />
     </div>
   ))
   .add('disabled input', () => <ZCheckbox disabled />);

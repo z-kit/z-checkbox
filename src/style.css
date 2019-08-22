@@ -22,7 +22,7 @@
 .z-checkbox {
   box-sizing: border-box;
   display: block;
-  margin: 1rem 0;
+  margin: 0;
 }
 
 /* Box containing the checkbox input and container */

@@ -144,7 +144,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.5.5",
     "@babel/runtime": "^7.5.5",
-    "@storybook/addons": "^v5.1.11",
+    "@storybook/addons": "^5.3.9",
     "@storybook/react": "^v5.1.11",
     "acorn": "^7.0.0",
     "autoprefixer": "^9.6.1",

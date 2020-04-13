@@ -148,7 +148,7 @@
     "@storybook/react": "^v5.1.11",
     "acorn": "^7.0.0",
     "autoprefixer": "^9.6.1",
-    "ava": "^2.3.0",
+    "ava": "^3.7.0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
